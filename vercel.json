@@ -1,0 +1,17 @@
+{
+    "builds": [
+        {
+            "src": "next.config.mjs",
+            "use": "@vercel/next"
+        }
+    ],
+    "build": {
+        "env": {
+            "NEXT_TELEMETRY_DISABLED": "1"
+        }
+    },
+    "buildCommand": "npm run build",
+    "outputDirectory": ".",
+    "devCommand": "npm run dev",
+    "installCommand": "npm install"
+}
