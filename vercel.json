@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "src": "next.config.mjs",
+            "src": "next.config.js",
             "use": "@vercel/next"
         }
     ],
@@ -10,8 +10,14 @@
             "NEXT_TELEMETRY_DISABLED": "1"
         }
     },
-    "buildCommand": "npm run build",
+    "buildCommand": "npx prisma generate && npm run build",
     "outputDirectory": ".",
     "devCommand": "npm run dev",
-    "installCommand": "npm install"
+    "installCommand": "npm install",
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
 }
