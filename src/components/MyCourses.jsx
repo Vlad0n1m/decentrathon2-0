@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { CourseCard } from "@/components/CourseCard"
 import { CourseDetails } from "@/components/CourseDetails"
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 export function MyCourses() {
   const [enrolledCourses, setEnrolledCourses] = useState([]);
@@ -78,7 +79,10 @@ export function MyCourses() {
               <h3 className="text-xl font-semibold mb-2">Курсы, в которых я участвую</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-8">
                 {enrolledCourses.map(course => (
+                  <Link href={`/courses/${course.id}`} key={course.id}>
+                    
                   <CourseCard key={course.id} course={course} onClick={handleCourseClick} />
+                  </Link>
                 ))}
               </div>
             </div>
@@ -88,7 +92,9 @@ export function MyCourses() {
               <h3 className="text-xl font-semibold mb-2">Созданные мной курсы</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {createdCourses.map(course => (
-                  <CourseCard key={course.id} course={course} onClick={handleCourseClick} />
+                  <Link href={`/courses/${course.id}`} key={course.id}>
+                    <CourseCard course={course} onClick={handleCourseClick} />
+                  </Link>
                 ))}
               </div>
             </div>
