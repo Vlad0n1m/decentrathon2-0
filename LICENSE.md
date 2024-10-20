@@ -1,6 +1,6 @@
 Proprietary License
 
-Copyright (c) 2024 [Ваше имя или название организации]
+Copyright (c) 2024 Vladislav Karachkov
 
 All rights reserved.
 
