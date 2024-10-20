@@ -8,7 +8,7 @@
 
 Посмотрите, как наша LMS работает в реальном времени! Нажмите на изображение ниже, чтобы увидеть видео-демонстрацию:
 
-[![Демо видео](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+[![Демо видео](https://img.youtube.com/watch?v=FberVdlg14g/0.jpg)](https://www.youtube.com/watch?v=FberVdlg14g)
 
 
 
